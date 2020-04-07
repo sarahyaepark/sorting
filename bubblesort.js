@@ -19,10 +19,11 @@ function bubbleSort(array) {
 }
 
 function swap(array, indexOne, indexTwo) {
-  let temp = indexOne;
+  console.log('>>>>>>> array>>>>>', array);
+  let temp = array[indexOne];
   array[indexOne] = array[indexTwo];
   array[indexTwo] = temp;
   return array;
 }
 
-module.exports = bubbleSort;
+// module.exports = bubbleSort;
