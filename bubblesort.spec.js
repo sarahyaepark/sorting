@@ -1,17 +1,12 @@
-/* eslint-env jasmine */
-/* global bubbleSort */
-
-// const bubbleSort = require('./bubblesort.js');
-
+/* eslint-disable no-undef */
 
 describe('Bubble Sort', function(){
 
-  beforeAll(function () {
-    spyOn(window, 'swap').and.callThrough(); // replace existing `tootsiepop['lick']` method
-  });
   it('counting number of times swap was called', function () {
-    bubbleSort.something();
-    expect(swap.calls.count()).toEqual(3);
+    expect(bubbleSort([1, 4, 2, 3])).toEqual([1, 2, 3, 4]);
+    spyOn(window, 'swap').and.callThrough();
+    bubbleSort([1, 4, 2, 3]);
+    expect(swap.calls.count()).toEqual(2);
   });
 
   it('handles an empty array', function(){

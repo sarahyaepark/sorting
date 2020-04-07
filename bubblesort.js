@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function bubbleSort(array) {
 
   let counter = 0;
@@ -26,4 +27,3 @@ function swap(array, indexOne, indexTwo) {
   return array;
 }
 
-// module.exports = bubbleSort;
