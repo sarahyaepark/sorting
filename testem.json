@@ -1,7 +1,3 @@
 {
-    "framework": "jasmine2"
-<<<<<<< HEAD
+  "framework": "jasmine2"
 }
-=======
-  }
->>>>>>> a3898fb0f79cffbc283d0dab8aa642f0db391682
